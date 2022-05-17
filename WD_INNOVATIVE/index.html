@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:46px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #6129F7 ;font-size:26px;color:#fff}
+</style>
+	<div class="top-left"><a href='http://localhost/TUNEXA/WD_INNOVATIVE/header.php'><h1 style="background: linear-gradient(to right, #6600ff 0%, #ff00ff 100%)"><button class="button1">Home</button></h1></a></div>
+	<link rel="stylesheet" href="s1.css">
+</head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Contact us</title>
+	<link rel="stylesheet" href="s1.css">
+</head>
+<body>
+	<div class="container">
+		<form onsubmit="sendEmail(); reset(); return false;">
+			<h3>GET IN TOUCH</h3>
+			<input type="text" id="name" placeholder="Your Name" required>
+			<input type="email" id="email" placeholder="Email id" required>
+			<input type="text" id="phone" placeholder="Phone no." required>
+			<textarea id="message" rows="4" placeholder="how can we help you?"></textarea>
+			<button type="submit">Send</button>
+		</form>
+	</div>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+			Email.send({
+				Host : "smtp.gmail.com",
+				Username : "sakshi18801@gmail.com",
+				Password : "",
+				To : 'sakshi.chaturvedi1808@gmail.com',
+				From : document.getElementById("email").value,
+				Subject : "This is the subject",
+				Body : "And this is the body"
+			}).then(
+			message => alert(message)
+			);
+		}
+	</script>
+</body>
+</html>

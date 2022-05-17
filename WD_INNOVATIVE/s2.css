@@ -1,0 +1,9 @@
+.f{
+	 background:#ffff;
+	 display:flex;
+	 flex-direction:column;
+	 padding:2vw 4vw;
+	 width:90%;
+	 max-width:600px;
+	 border-radius:10px;
+ }
