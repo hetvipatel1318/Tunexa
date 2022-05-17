@@ -1,2 +1,2 @@
-# Tunexa-Emotion-Based-Music-Player
+# Tunexa
 Emotion Based Music Player
